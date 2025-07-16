@@ -15,7 +15,10 @@ class CreateKedroProjectArgs(BaseModel):
     """Arguments for creating a Kedro project."""
 
     project_name: str = Field(
-        description="EXACT name of the new Kedro project as specified by the user - extract from quotes or after 'called'/'named'"
+        description=(
+            "EXACT name of the new Kedro project as specified by the user "
+            "- extract from quotes or after 'called'/'named'"
+        )
     )
     tools: str = Field(
         default="none",
@@ -163,7 +166,10 @@ try:
             "messages": [
                 {
                     "role": "user",
-                    "content": "Create a new Kedro project called 'analytics-pipeline' with all tools, include an example pipeline, and disable telemetry.",
+                    "content": (
+                        "Create a new Kedro project called 'analytics-pipeline' "
+                        "with all tools, include an example pipeline, and disable telemetry.",
+                    ),
                 }
             ]
         }
