@@ -1,0 +1,12 @@
+[project]
+name = "langgraph-playground"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "kedro>=0.19.14",
+    "langchain>=0.3.26",
+    "langchain-community>=0.3.27",
+    "langchain-ollama>=0.3.4",
+    "langgraph>=0.5.3",
+    "openai>=1.97.0",
+]
